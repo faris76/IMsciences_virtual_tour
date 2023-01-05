@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imsciences Virtual Tour</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <style>
+      @-ms-viewport {
+        width: device-width;
+      }
+    </style>
+    <link rel="stylesheet" href="vendor/reset.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="multiple-scenes view-control-buttons">
+    <div id="pano"></div>
+
+    <div id="sceneList">
+      <ul class="scenes">
+        <a href="javascript:void(0)" class="scene" data-id="0-1"> </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="1-2">
+          <li class="text">2</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="2-3">
+          <li class="text">3</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="3-4">
+          <li class="text">4</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="4-5">
+          <li class="text">5</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="5-6">
+          <li class="text">6</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="6-7">
+          <li class="text">7</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="7-8">
+          <li class="text">8</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="8-9">
+          <li class="text">9</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="9-10">
+          <li class="text">10</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="10-11">
+          <li class="text">11</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="11-12">
+          <li class="text">12</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="12-13">
+          <li class="text">13</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="13-mosque">
+          <li class="text">Mosque</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="14-futsal-ground">
+          <li class="text">Futsal ground</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="15-gymnasium">
+          <li class="text">Gymnasium</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="16-ground-1">
+          <li class="text">Ground 1</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="17-ground-2">
+          <li class="text">Ground 2</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="18-14">
+          <li class="text">14</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="19-15">
+          <li class="text">15</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="20-16">
+          <li class="text">16</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="21-17">
+          <li class="text">17</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="22-round-tables">
+          <li class="text">Round Tables</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="23-18">
+          <li class="text">18</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="24-19">
+          <li class="text">19</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="25-20">
+          <li class="text">20</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="26-21">
+          <li class="text">21</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="27-22">
+          <li class="text">22</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="28-23">
+          <li class="text">23</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="29-24">
+          <li class="text">24</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="30-25">
+          <li class="text">25</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="31-26">
+          <li class="text">26</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="32-27">
+          <li class="text">27</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="33-28">
+          <li class="text">28</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="34-bic">
+          <li class="text">BIC</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="35-cafe">
+          <li class="text">Cafe</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="36-academic-block-">
+          <li class="text">Academic Block</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="37-lecture-theatre">
+          <li class="text">lecture theatre</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="38-ground-floor">
+          <li class="text">Ground Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="39-ground-floor">
+          <li class="text">Ground Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="40-ground-floor">
+          <li class="text">Ground Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="41-ground-floor">
+          <li class="text">Ground Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="42-basement">
+          <li class="text">Basement</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="43-basement">
+          <li class="text">Basement</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="44-basement">
+          <li class="text">Basement</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="45-general-lab">
+          <li class="text">General Lab</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="46-general-lab">
+          <li class="text">General Lab</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="47-basement">
+          <li class="text">Basement</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="48-computer-lab">
+          <li class="text">Computer Lab</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="49-basement">
+          <li class="text">Basement</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="50-gallery">
+          <li class="text">Gallery</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="51-first-floor">
+          <li class="text">First Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="52-classroom">
+          <li class="text">Classroom</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="53-first-floor">
+          <li class="text">First Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="54-first-floor">
+          <li class="text">First Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="55-first-floor">
+          <li class="text">First Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="56-first-floor">
+          <li class="text">First Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="57-first-floor">
+          <li class="text">First Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="58-2nd-floor">
+          <li class="text">2nd Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="59-2nd-floor">
+          <li class="text">2nd Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="60-smart-classroom">
+          <li class="text">Smart Classroom</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="61-lecture-theatre">
+          <li class="text">Lecture Theatre</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="62-2nd-floor">
+          <li class="text">2nd Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="63-2nd-floor">
+          <li class="text">2nd Floor</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="64-2nd-floor">
+          <li class="text">2nd Floor</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="65-video-conference-room-"
+        >
+          <li class="text">Video Conference Room</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="66-conference-room">
+          <li class="text">Conference Room</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="67-dld-lab">
+          <li class="text">DLD LAB</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="68-dld-lab">
+          <li class="text">DLD LAB</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="69-dld-lab">
+          <li class="text">DLD LAB</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="70-outside-library">
+          <li class="text">Outside Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="71-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="72-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="73-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="74-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="75-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="76-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="77-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="78-library">
+          <li class="text">Library</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="79-lincoln-corner">
+          <li class="text">Lincoln Corner</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="80-lincoln-corner">
+          <li class="text">Lincoln Corner</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="81-lincoln-corner">
+          <li class="text">Lincoln Corner</li>
+        </a>
+      </ul>
+    </div>
+
+    <div id="titleBar">
+      <h1 class="sceneName"></h1>
+    </div>
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png" />
+      <img class="icon on" src="img/pause.png" />
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png" />
+      <img class="icon on" src="img/windowed.png" />
+    </a>
+
+    <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand.png" />
+      <img class="icon on" src="img/collapse.png" />
+    </a>
+
+    <a
+      href="javascript:void(0)"
+      id="viewUp"
+      class="viewControlButton viewControlButton-1"
+    >
+      <img class="icon" src="img/up.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewDown"
+      class="viewControlButton viewControlButton-2"
+    >
+      <img class="icon" src="img/down.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewLeft"
+      class="viewControlButton viewControlButton-3"
+    >
+      <img class="icon" src="img/left.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewRight"
+      class="viewControlButton viewControlButton-4"
+    >
+      <img class="icon" src="img/right.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewIn"
+      class="viewControlButton viewControlButton-5"
+    >
+      <img class="icon" src="img/plus.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewOut"
+      class="viewControlButton viewControlButton-6"
+    >
+      <img class="icon" src="img/minus.png" />
+    </a>
+
+    <script src="vendor/screenfull.min.js"></script>
+    <script src="vendor/bowser.min.js"></script>
+    <script src="vendor/marzipano.js"></script>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
